@@ -1,8 +1,6 @@
 <script setup>
-// import { ref, createApp } from 'vue'
-
 import { ref } from 'vue'
-import testVue2 from './vueTest2.vue'
+import testVue2 from './vueTest2.vue' //다른 vue 파일을 import하여 화면을 구성할 수 있다
 const results = ref('')
 
 async function loadCitiesList() {
@@ -30,6 +28,7 @@ async function loadAnotherInfos() {
     <br />
   </div>
   <testVue2 />
+  <!--해당 위치에서 import해온 vue를 렌더링한다-->
 </template>
 
 <style scoped>
